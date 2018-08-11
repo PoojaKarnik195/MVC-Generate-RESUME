@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- taking input from the user to fill resume details -->
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Resume</title>
+</head>
+<body>
+	<form action="Resume" method="get">
+		<div align="center">
+			<h1>RESUME</h1>
+			<table>
+				<tr>
+					<td>First Name <input type="text" name="firstName" /><br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Last Name <input type="text" name="lastName" /><br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender <input type="radio" name="gender" value="Male" />Male
+						<input type="radio" name="gender" value="Female" />Female<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Highest Qualification<select name="qualification">
+							<option selected>--Select Group--</option>
+							<option value="B.Com">B.Com</option>
+							<option value="B.Sc">B.Sc</option>
+							<option value="B.Tech">B.Tech</option>
+							<option value="B.A">B.A</option>
+					</select><br> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>Date Of Birth <input type="date" name="dateOfBirth"><br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Hobbies<br> <select name="hobbies" multiple>
+							<option selected>--Select Group--</option>
+							<option value="Singing">Singing</option>
+							<option value="Dancing">Dancing</option>
+							<option value="Reading Books">Reading Books</option>
+							<option value="Playing">Playing</option>
+							<option value="Chess">Chess</option>
+					</select><br> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>Address<br> <textarea name="address" cols="35"
+							rows="5"></textarea> <br> <br>
+					</td>
+				</tr>
+				<!--  
+				<tr>
+					<td>Photo<input type="file" name"file" id="file"><br>
+					<br>
+					</td>
+				</tr>
+				-->
+				<tr>
+					<td>Skills<input type="checkbox" name="skills" value="C" />C
+						<input type="checkbox" name="skills" value="C++" />C++ <input
+						type="checkbox" name="skills" value="Java" />Java <input
+						type="checkbox" name="skills" value=".Net" />.Net <input
+						type="checkbox" name="skills" value="Python" />Python<br> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>Email<input type="text" name="email" /><br> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>Website<input type="text" name="website" /><br> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>Contact Number<input type="text" name="contactNumber" /><br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Description<br> <textarea name="description"
+							cols="35" rows="5"></textarea> <br> <br>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="reset" value="clear" /> <input type="submit"
+						value="submit" /></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+</html>
